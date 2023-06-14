@@ -1,4 +1,4 @@
-const express = require("express");//infortar expres
+const express = require("express"); //infortar expres
 
 //crear una instancia de la ruta
 const router = express.Router();
@@ -6,16 +6,16 @@ const router = express.Router();
 const controladores = require("../controllers/app.controllers");
 
 //ruta para la peticion GET
-router.get("/",controladores.get);
+router.get("/", controladores.get);
 
 //ruta para la peticion POST
-router.post("/",controladores.post)
+router.post("/", controladores.post);
 
 //ruta para la peticion PUT
-router.put("/",controladores.put)
+router.put("/", controladores.put);
 
 //ruta para la peticion DELETE
-router.delete("/",controladores.delete)
+router.delete("/", controladores.delete);
 
 // Exportaciones
 module.exports = router;
